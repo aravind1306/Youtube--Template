@@ -1,0 +1,205 @@
+
+.header{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.hamburger-menu-icon{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+.hamburger-menu-icon:hover{
+    opacity: 0.5;
+}
+.hamburger-menu-icon::after{
+    opacity: 0.4;
+}
+
+
+.youtube-logo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.box{
+    /*flex: 1;
+    height: 36px;
+    font-family: roboto,arial;
+    font-size: 16px;
+    border-width: 1px;
+    border: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgb(241, 241, 241);
+    box-shadow: inset 1px 1px 1px rgba(0, 0,0,0.4);
+    width: 0;*/
+    flex: 1;
+  height: 36px;
+  font-family: roboto,arial;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+.box::placeholder{
+    font-family: roboto,arial;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.sbutton{
+    width: 60px;
+    height: 38px;
+    margin-left: -1px;
+    display: flex;
+    border: none;
+    border-style: solid;
+    align-items: center;
+    border-width: 1px;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(190, 190, 190);
+    cursor: pointer;
+
+}
+.sbutton,.vbutton,.upload-container,
+.yapps-container,.notification-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-icon{
+    height: 25px;
+    padding-top: 5px;
+}
+.sbutton .tooltip,
+.vbutton .tooltip,
+.upload-container .tooltip, 
+.yapps-container .tooltip,
+.notification-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    font-family: Roboto,arial;
+    font-size: 12px;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap;
+}
+.sbutton:hover .tooltip,
+.vbutton:hover .tooltip ,
+.upload-container:hover .tooltip,
+.yapps-container:hover .tooltip,
+.notification-container:hover .tooltip {
+    opacity: 1;
+}
+
+.vbutton{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 8px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+
+
+}
+
+.voice-search-icon{
+    height: 20px;
+    padding-top: 8px;
+}
+
+.right-section{
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.upload{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+}
+.yapps{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+
+}
+.notification-container{
+    position: relative;
+}
+.notification{
+    position: absolute;
+    background-color: rgb(200,0,0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 10px;
+    top: -2px;
+    right: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    
+}
+
+.notification-icon{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+
+}
+.user-profile{
+    height: 32px;
+    border-radius: 16px;
+}
